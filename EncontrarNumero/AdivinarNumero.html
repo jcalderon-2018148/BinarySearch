@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/adivinar.css" rel="stylesheet">
+    <link href = "bootstrap-5.2.0-dist/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Encontrar Número</title>
+</head>
+<body>
+    <div class="regreso">
+        <a href="index.html" role="button" class="btn btn-danger">Regresar</a>
+    </div>
+    <center class="center">
+        <div class="contenedor">
+            <div>
+                <h1 style="color:#6875e7; font-size: 70px;">Búsqueda binaria</h1>
+            </div>
+            
+            <br>
+            <div id="generacionNumero">
+                <h4 style="color: #95a2b3;">Piense un número del 0 al 1000</h4>
+                <h4 style="color: #95a2b3;">La máquina adivinará</h4><br>
+            </div>
+            
+            <div>
+                <div class="intentos">
+                    <h1 style="color: #fff;">Intentos</h1>
+                    <h1 id="intentos" style="color: #fff;">1/10</h1>
+                </div>
+                
+                <br>
+                <h3 style="color: #455A64;">Su número es:</h3>
+                <input type="text" id="intentoNumero"><br><br>
+                <input class="btn btn-dark" type="button" id="mayor" value="Mayor" onclick="mayor()">
+                <input class="btn btn-dark" type="button" id="igual" value="Igual" onclick="igual()">
+                <input class="btn btn-dark" type="button" id="menor" value="Menor" onclick="menor()">
+            </div>
+            <br>
+            <div id="ganador"></div>
+        </div>
+    </center>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4551b5" fill-opacity="1" d="M0,0L40,26.7C80,53,160,107,240,117.3C320,128,400,96,480,85.3C560,75,640,85,720,106.7C800,128,880,160,960,181.3C1040,203,1120,213,1200,197.3C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <script src="indexAdivinar.js"></script>
+</body>
+</html>
